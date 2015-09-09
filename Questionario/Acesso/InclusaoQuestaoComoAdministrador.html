@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://sad360carlos.azurewebsites.net/" />
+<title>InclusaoQuestaoComoAdministrador</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">InclusaoQuestaoComoAdministrador</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=loginLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtSenha</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[alt=&quot;Questionários&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Questões')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Incluir Questão</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=texto</td>
+	<td>O funcionário chega ao cliente no horário estabelecido?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtAlternativa1</td>
+	<td>Sim</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtAlternativa2</td>
+	<td>Não</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=incluiQuestao</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Deseja realmente realizar a inclusão da questão?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sair</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtUsuario</td>
+	<td>admin</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
